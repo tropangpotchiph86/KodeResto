@@ -12,8 +12,54 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>KodeResto | Welcome</title>
   </head>
-  <body>
-    KodeResto
+  <body data-bs-spy="scroll" data-bs-target="#main_menu">
+    <nav
+      id="main_menu"
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="./img/logo1.png" alt="KodeResto Logo" width="150" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mainMenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#work" class="nav-link">Work</a></li>
+
+            <li class="dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Cuisines</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item">KodeResto Specialty</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Korean Cuisines</a></li>
+                <li><a href="#" class="dropdown-item">Filipino Cuisines</a></li>
+                <li><a href="#" class="dropdown-item">American Cuisines</a></li>
+              </ul>
+            </li>
+            <li><a href="events.html" class="nav-link">Events</a></li>
+            <li><a href="#contactus" class="nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
